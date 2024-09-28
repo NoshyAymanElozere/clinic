@@ -18,9 +18,11 @@ export default function Cards({ data, slider, style, cols, title, text }) {
   }, [data]);
 
   return (
-    <div className="w-full space-y-8">
-      {title && <Title head={title} text={text} />}
-
+    <div className="space-t-5 w-full text-main">
+      {title && <Title head={title} className="text-main" text={text} />}
+      <div className="flex w-full items-center justify-center pb-4">
+        <img src="/media/icons/icon/section-img.png" alt="" />
+      </div>
       {slider ? (
         <div className="w-full">
           {!items.length ? (
@@ -30,7 +32,7 @@ export default function Cards({ data, slider, style, cols, title, text }) {
               modules={[Navigation, Autoplay]}
               spaceBetween={15}
               slidesPerView={5}
-              //   autoplay={{ delay: 5000 }}
+              autoplay={{ delay: 5000 }}
               speed={500}
               loop={false}
               navigation={true}

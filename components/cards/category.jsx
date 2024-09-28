@@ -23,7 +23,7 @@ export default function Card({ data, style }) {
             </h1>
 
             <p className="text-[.9rem] font-semibold tracking-wide text-gray-600">
-              <span>{fix_number(data.services)} Services</span>
+              <span>{fix_number(data.services)} </span>
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Card({ data, style }) {
             </h1>
 
             <p className="text-[.9rem] font-semibold tracking-wide text-gray-700">
-              {fix_number(data.services)} Services
+              {data.services}
             </p>
 
             <div className="w-full pt-5">

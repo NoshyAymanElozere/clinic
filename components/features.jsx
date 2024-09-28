@@ -7,7 +7,7 @@ export default function Features({ style, title, text }) {
   const config = useSelector((state) => state.config);
 
   return (
-    <div className="flex w-full flex-col gap-8  text-maintitle">
+    <div className="flex w-full flex-col gap-8  text-main">
       {title && (
         <main>
           <Title head={title} text={text} />
@@ -324,17 +324,18 @@ export default function Features({ style, title, text }) {
           <div className="grid h-[25rem] w-full cursor-default grid-cols-3 gap-5">
             <div className="flex h-full w-full flex-col gap-5">
               <div className="relative h-[50%] w-full overflow-hidden rounded-sm border border-gray-300">
-                <div className="layer absolute left-0 top-0 h-full w-full">
-                  <img
-                    src="/media/service/17.png"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-
+                <Link href="/">
+                  <div className="layer center absolute top-0 h-full w-full">
+                    <img
+                      src="/media/Doctors/deseases/des1.jpg"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </Link>
                 <div className="absolute left-0 top-0 flex h-full w-full items-end">
                   <div className="w-full bg-gradient-to-t from-primary to-transparent py-6">
                     <p className="text-center text-[1.8rem] font-bold tracking-wide text-white">
-                      Bungalows
+                      علاج القلب
                     </p>
                   </div>
                 </div>
@@ -368,24 +369,11 @@ export default function Features({ style, title, text }) {
                 </div>
 
                 <div className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-sm border border-gray-300 bg-gray-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    className="h-12 w-12 fill-gray-600"
-                  >
-                    <path
-                      d="M10.5 15.75v7.5a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-1.5 0M3 23.25v-7.5a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 
-                                        1.5 0M1.2 17.1l6-4.5h-.9l6 4.5a.75.75 0 1 0 .9-1.2l-6-4.5a.75.75 0 0 0-.9 0l-6 4.5a.75.75 0 1 0 .9 1.2m19.8.15a2.25 
-                                        2.25 0 0 1-4.5 0c0-.801.102-1.698.297-2.673.253-1.264.652-2.618 1.158-4.008a39 39 0 0 1 
-                                        1.344-3.23q.089-.19.122-.254h-1.342l.122.253a39 39 0 0 1 1.344 3.23c.506 1.39.905 2.745 1.158 4.01.195.974.297 
-                                        1.87.297 2.672m1.5 0c0-.909-.113-1.902-.327-2.967-.269-1.346-.689-2.77-1.218-4.227a41 41 0 0 
-                                        0-1.398-3.361q-.097-.202-.136-.28a.75.75 0 0 0-1.342 0 34 34 0 0 0-.483 1.039 41 41 0 0 0-1.05 2.602c-.53 1.456-.95 
-                                        2.881-1.22 4.227C15.114 15.348 15 16.34 15 17.25a3.75 3.75 0 1 0 7.5 0m-4.5 3v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 
-                                        0-1.5 0M.75 24h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5M6 23.25v-3a.75.75 0 0 1 1.5 0v3a.75.75 0 0 0 1.5 
-                                        0v-3a2.25 2.25 0 0 0-4.5 0v3a.75.75 0 0 0 1.5 0M8.247 7.5a3 3 0 1 0-2.163-5.067l.544.517.722-.202A3.745 3.745 0 
-                                        1 0 3.752 7.5H8.25zM8.25 6h-4.5a2.245 2.245 0 1 1 2.156-2.848.75.75 0 0 0 1.266.315A1.5 1.5 0 1 1 8.253 6z"
-                    ></path>
-                  </svg>
+                  <img
+                    src="  /media/icons/icon/examin.svg"
+                    alt="examin"
+                    className="w-28"
+                  />
 
                   <p className="text-[1.3rem] font-bold text-gray-950">
                     Apartments
@@ -395,12 +383,7 @@ export default function Features({ style, title, text }) {
             </div>
 
             <div className="relative h-full w-full overflow-hidden rounded-sm border border-gray-300 bg-[#ebddcd] py-8">
-              <div className="layer absolute left-4 top-0 flex h-full w-full items-end">
-                <img
-                  src="/media/service/16.png"
-                  className="h-[70%] max-w-full"
-                />
-              </div>
+              <div className="layer absolute left-4 top-0 flex h-full w-full items-end"></div>
 
               <div className="flex w-full items-center justify-center">
                 <p className="text-[2rem] font-bold tracking-wide text-[#946800]">
@@ -453,36 +436,36 @@ export default function Features({ style, title, text }) {
         <main>
           <div className="relative flex w-full items-center overflow-hidden rounded-md bg-primary p-16">
             <div className="w-[40%] cursor-default space-y-5">
-              <div className="text-[1.7rem] font-bold tracking-wide text-white">
-                Download Our App
+              <div className="flex items-center text-[2rem]  font-bold tracking-wide text-white">
+                {" "}
+                Book a Free Consultation
+                <span class="material-symbols-outlined text-[#ef0f0f]">
+                  bloodtype
+                </span>
               </div>
 
               <div className="text-[1rem] font-semibold tracking-wide text-white">
-                Search, compare and book medical consultations easily with the
-                largest network of doctors in Egypt. earn points when you
-                achieve your daily goal.
+                You can book a free consultation with all of our doctors
               </div>
-
               <div className="flex items-center gap-3 pt-5">
-                <div className="flex w-[12rem] cursor-pointer items-center justify-center gap-3 rounded-md bg-primary-light py-3 text-[1.05rem] font-semibold tracking-wide text-gray-950 duration-300 hover:opacity-[.8]">
-                  <img
-                    src="/media/layout/google-play-logo.svg"
-                    className="h-7 w-7"
-                  />
-                  <span>Google Play</span>
+                <div className="flex w-[12rem] cursor-pointer items-center justify-center gap-3 rounded-[8px] bg-primary-light py-3 text-[1.05rem] font-semibold tracking-wide text-gray-950 duration-300 hover:bg-main">
+                  <img src="/media/Doctors/phone-1.png" className="h-7 w-7" />
+                  <span className="text-[1.05rem] font-extrabold text-main  hover:text-white">
+                    See more
+                  </span>
                 </div>
 
-                <div className="flex w-[12rem] cursor-pointer items-center justify-center gap-3 rounded-md bg-primary-light py-3 text-[1.05rem] font-semibold tracking-wide text-gray-950 duration-300 hover:opacity-[.8]">
+                {/* <div className="flex w-[12rem] cursor-pointer items-center justify-center gap-3 rounded-md bg-primary-light py-3 text-[1.05rem] font-semibold tracking-wide text-gray-950 duration-300 hover:opacity-[.8]">
                   <img src="/media/layout/apple-logo.svg" className="h-7 w-7" />
                   <span>Apple store</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
-            <div className="layer absolute -bottom-9 right-9 flex h-full items-end gap-5">
+            <div className="layer  absolute right-9 flex h-full items-end gap-5">
               <img
-                src="/media/layout/mobile-phone2.png"
-                className="max-h-full max-w-[35rem]"
+                src="/media/Doctors/phone-1.png"
+                className="max-h-full max-w-[16rem]"
               />
             </div>
           </div>

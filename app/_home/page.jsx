@@ -18,11 +18,11 @@ export default function Home() {
     const services = [
       {
         id: 1,
-        name: "Beuty Center In Algamal",
-        image: "service/9.png",
+        name: "heba yousef ",
+        image: "Doctors/doctor-detail.jpg",
         reviews: 429,
         rate: 5,
-        location: "Egypt, Cairo",
+        location: "Dermatology (Skin)",
         new_price: 60.0,
         old_price: 70.0,
         vendor: {
@@ -33,11 +33,11 @@ export default function Home() {
       },
       {
         id: 2,
-        name: "Genius loyalty program",
-        image: "service/11.png",
+        name: "Donia Akram ",
+        image: "Doctors/5.jpg",
         reviews: 540,
         rate: 4,
-        location: "Jurdan, Omman",
+        location: "Ear, Nose and Throa",
         new_price: 38.35,
         old_price: 70.0,
         vendor: {
@@ -48,11 +48,11 @@ export default function Home() {
       },
       {
         id: 3,
-        name: "Destinations we love",
-        image: "service/8.png",
+        name: "Nesma Ahmed ",
+        image: "Doctors/6.jpg",
         reviews: 129,
         rate: 2,
-        location: "Emirates, Dubai",
+        location: "Ophthalmology (Eyes)",
         new_price: 12.5,
         old_price: 70.0,
         vendor: {
@@ -63,8 +63,8 @@ export default function Home() {
       },
       {
         id: 4,
-        name: "Oriente Palace Apartments",
-        image: "service/4.png",
+        name: "Yossra Mohamed",
+        image: "Doctors/8.jpg",
         reviews: 723,
         rate: 4,
         location: "Saudi arabian, Rayiad",
@@ -72,14 +72,14 @@ export default function Home() {
         old_price: 70.0,
         vendor: {
           id: 1,
-          name: "Coding Master",
+          name: "Chest and Respiratory",
           image: "user/1.png",
         },
       },
       {
         id: 5,
-        name: "Aparthotel Stare Miasto",
-        image: "service/3.png",
+        name: "Mona Ahmed",
+        image: "Doctors/9.jpg",
         reviews: 312,
         rate: 3,
         location: "Egypt, Alexandria",
@@ -87,7 +87,7 @@ export default function Home() {
         old_price: 70.0,
         vendor: {
           id: 1,
-          name: "Coding Master",
+          name: "Chest and Respiratory",
           image: "user/1.png",
         },
       },
@@ -95,110 +95,102 @@ export default function Home() {
     const categories = [
       {
         id: 1,
-        name: "Beuty Center",
-        image: "service/1.png",
+        name: "nabil moahmed",
+        image: "Doctors/blog1.jpg",
         reviews: 429,
         rate: 5,
-        services: 30,
+        services: "General Treatment",
         location: "Egypt, Cairo",
       },
       {
         id: 2,
-        name: "Second Category",
-        image: "service/2.png",
+        name: "Yousef ALsyed",
+        image: "Doctors/blog2.jpg",
         reviews: 429,
         rate: 5,
-        services: 40,
+        services: "Teeth Whitening",
         location: "Egypt, Cairo",
       },
       {
         id: 3,
-        name: "Beuty Center",
-        image: "service/3.png",
+        name: "mohamed khaled",
+        image: "Doctors/blog3.jpg",
         reviews: 429,
         rate: 5,
-        services: 30,
+        services: "Heart Surgery",
         location: "Egypt, Cairo",
       },
       {
         id: 4,
-        name: "Second Category",
-        image: "service/4.png",
+        name: "Gergo naser",
+        image: "Doctors/doc1.png",
         reviews: 429,
         rate: 5,
-        services: 40,
+        services: "Ear Treatment",
         location: "Egypt, Cairo",
       },
       {
         id: 5,
-        name: "Beuty Center",
-        image: "service/5.png",
+        name: "Abdelrahman abdelaziz",
+        image: "Doctors/doc2.jpg",
         reviews: 429,
         rate: 5,
-        services: 30,
+        services: "Vision Problems",
         location: "Egypt, Cairo",
       },
       {
         id: 6,
-        name: "Beuty Center",
-        image: "service/6.png",
+        name: "Ahmed khaled ",
+        image: "Doctors/doc2.png",
         reviews: 429,
         rate: 5,
-        services: 30,
+        services: "Blood Transfusion",
         location: "Egypt, Cairo",
       },
       {
         id: 7,
-        name: "Second Category",
-        image: "service/7.png",
+        name: "noshy Ayman",
+        image: "Doctors/doc3.jpg",
         reviews: 429,
         rate: 5,
-        services: 40,
+        services: " Dental Care",
         location: "Egypt, Cairo",
       },
       {
         id: 8,
-        name: "Beuty Center",
-        image: "service/11.png",
+        name: "omnaia ayman",
+        image: "Doctors/doc5.jpg",
+
         reviews: 429,
         rate: 5,
-        services: 30,
+        services: " teeth Whitening",
         location: "Egypt, Cairo",
       },
       {
         id: 9,
-        name: "Second Category",
-        image: "service/4.png",
+        name: "yousef joon",
+        image: "Doctors/doc4.jpg",
         reviews: 429,
         rate: 5,
-        services: 40,
+        services: "Teeth Whitening",
         location: "Egypt, Cairo",
       },
       {
         id: 10,
-        name: "Beuty Center",
-        image: "service/3.png",
+        name: "meenem ghonim",
+        image: "Doctors/doc1.png",
         reviews: 429,
         rate: 5,
-        services: 30,
+        services: "General Treatment",
         location: "Egypt, Cairo",
       },
       {
         id: 11,
-        name: "Second Category",
-        image: "service/2.png",
+        name: "heba kotp",
+        image: "Doctors/doctor-detail.jpg",
         reviews: 429,
         rate: 5,
-        services: 40,
-        location: "Egypt, Cairo",
-      },
-      {
-        id: 12,
-        name: "Beuty Center",
-        image: "service/1.png",
-        reviews: 429,
-        rate: 5,
-        services: 30,
+        services: "teeth Whitening",
         location: "Egypt, Cairo",
       },
     ];
@@ -315,19 +307,20 @@ export default function Home() {
           title="We Have Specialist Doctors To Solve Your Problems "
         />
 
-        <Services data={data.recommeded} slider title="Top Services" />
+        <Services data={data.recommeded} slider title="Top Related Doctors" />
       </main>
 
       <Title
         style={2}
-        head="Keep services flexible"
-        text="Use Reserve Now Pay Later to secure the activities you don't want to miss it."
+        head="Do you need Emergency Medical Care? "
+        text="you can contanct with us any time"
       />
 
       <Features
         style={3}
-        title="Free cancellation"
+        title="Symptoms and solutions"
         text="You'll receive a full refund at least 24 hours"
+        className="text-main"
       />
 
       <main className="space-y-8">
