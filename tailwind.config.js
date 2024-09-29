@@ -91,6 +91,7 @@ module.exports = {
           "0 2px 2px rgb(224 230 237 / 46%), 1px 6px 7px rgb(224 230 237 / 46%)",
         sm: ".1rem .1rem .2rem #9991, -.1rem -.1rem .2rem #9991",
         md: ".1rem .1rem .5rem #7771, -.1rem -.1rem .5rem #7771",
+        custom: "3px 2px 7px 2px #e3e3e3", // Your custom shadow
       },
       borderRadius: {
         sm: "1rem",

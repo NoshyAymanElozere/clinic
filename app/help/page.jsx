@@ -1,22 +1,28 @@
 "use client";
-import { useSelector } from 'react-redux';
 
-export default function Help () {
+import { Hearo } from "@/components/Doctor.home/component/hearoSeaction";
+import Header from "@/components/Doctor.home/Layout/header";
+import { useSelector } from "react-redux";
 
-    const config = useSelector((state) => state.config);
+import Services from "@/components/Doctor.home/component/Services";
+import Testimonials from "@/components/Doctor.home/component/testimonials";
+import DrStatus from "@/components/Doctor.home/component/DrStatus";
+import AvilableTime from "@/components/Doctor.home/component/AvilableTime";
 
-    return (
-
-        <div className='w-full my-8'>
-
-            <main>
-                
-                Help Center
-
-            </main>
-
-        </div>
-         
-    )
-
+export default function Help() {
+  const config = useSelector((state) => state.config);
+  return (
+    <div className="my-8 w-full">
+      <main>
+        <Header />
+        <Hearo imgSrc="/media/service/background.jpg" />
+        <AvilableTime />
+        <Services title="Doctor Services" />
+        <Testimonials
+          title="What People Say"
+          info="Welcome to our Website name and what we do say some discriptions abouth this service or what you need. "
+        />
+      </main>
+    </div>
+  );
 }
